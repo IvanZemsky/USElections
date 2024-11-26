@@ -20,7 +20,7 @@ defineProps<Props>()
       :id="state.id"
       :d="state.d"
       stroke-width="1"
-      class="fill-slate-300 stroke-white transition cursor-pointer hover:brightness-90"
+      class="fill-neutral-300 stroke-white transition cursor-pointer hover:brightness-90"
     />
   </svg>
 </template>

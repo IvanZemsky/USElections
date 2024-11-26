@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Electors from "./components/Electors.vue";
 import States from "./components/States.vue";
 import BaseButton from './components/ui/BaseButton.vue'
 import { states } from "./model/states";
@@ -10,6 +11,7 @@ import { states } from "./model/states";
   <div class="p-6">
     <h1 className="text-3xl font-bold underline mb-5">Hello world!</h1>
     <BaseButton>Click me</BaseButton>
+    <Electors/>
     <States :states="states"/>
   </div>
 </template>
