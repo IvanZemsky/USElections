@@ -1,4 +1,4 @@
-import type { State, StateInDiagram, StateRect } from '@/types/types'
+import type { State, StateInDiagram, StateRect } from '@/model/types/state'
 
 type VotetStatesDiagramOptions = {
   states: State[]

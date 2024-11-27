@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { createVotedStatesDiagram } from '@/helpers/createVotedStatesDiagram'
-import type { State, StateInDiagram } from '@/types/types'
+import type { State, StateInDiagram } from '@/model/types/state'
 import { onMounted, ref, type Ref } from 'vue'
 
 const states: State[] = [
