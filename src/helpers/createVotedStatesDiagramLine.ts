@@ -6,7 +6,7 @@ type VotetStatesDiagramOptions = {
   rectSize?: number
 }
 
-export const createVotedStatesDiagram = ({
+export const createVotedStatesDiagramLine = ({
   states,
   columnAmount = 3,
   rectSize = 8.2,
@@ -23,7 +23,7 @@ export const createVotedStatesDiagram = ({
     const state = states[i]
     const coords: StateRect[] = []
 
-    for (let j = 0; j < state.electorsAmount; j++) {
+    for (let j = 0; j < state.electorCount; j++) {
       coords.push({
         x: rectSize * countX,
         y: rectSize * countY,

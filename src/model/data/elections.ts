@@ -10,7 +10,7 @@ export const elections: Election[] = [
       {
         party: 'Republican',
         candidate: 'Trump',
-        logo: './republicanLogo2024.jpg',
+        logo: './images/republicanLogo2024.png',
         popularVotes: 77797070,
         electoralVotes: 312,
         color: 'red-500',
@@ -18,7 +18,7 @@ export const elections: Election[] = [
       {
         party: 'Democratic',
         candidate: 'Harris',
-        logo: './democraticLogo2024.jpg',
+        logo: './images/democraticLogo2024.png',
         popularVotes: 75221315,
         electoralVotes: 226,
         color: 'blue-400',

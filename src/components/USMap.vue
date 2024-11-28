@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import type { State } from '@/model/types/state'
 import StateOnMap from './StateOnMap.vue'
+import { stateElection } from "@/model/data/stateElection";
+import type { Election } from "@/model/types/election";
 
-type Props = {
-  states: State[]
-}
+const { election } = defineProps<{ election: Election }>()
 
-defineProps<Props>()
+const states = stateElection.find((result) => result.electionId === election.id)?.stateResults || []
 </script>
 
 <template>

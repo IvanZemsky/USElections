@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import ElectionsPage from "./pages/ElectionsPage.vue";
+import RootLayout from "./components/RootLayout.vue";
 
 </script>
 
 <template>
-  <ElectionsPage/>
+  <RootLayout/>
 </template>
 
 

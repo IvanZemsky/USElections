@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { getColor } from "@/helpers/getColor";
 import { statesSVG } from '@/model/states'
 import type { State } from '@/model/types/state'
 
@@ -21,6 +22,6 @@ const color = state.sides.reduce((bestSide, currentSide) => {
     :id="id"
     :d="statesSVG[state.name.toUpperCase()]"
     stroke-width="1"
-    :class="`fill-${color} stroke-white transition cursor-pointer hover:brightness-90`"
+    :class="`fill-${getColor(state.sides)} stroke-white transition cursor-pointer hover:brightness-90`"
   />
 </template>

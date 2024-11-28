@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import CheckIcon from './icons/CheckIcon.vue'
 import BaseWrapper from './ui/BaseWrapper.vue'
 import BaseButton from './ui/BaseButton.vue'
