@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import StateByGroupDiagram from '@/components/diagrams/StateByGroupDiagram/StateByGroupDiagram.vue'
 import VotedStateDiagram from '@/components/diagrams/VotedStateDiagram/VotedStateDiagram.vue'
-import USMap from '@/components/USMap.vue'
+import USMap from '@/components/map/USMap.vue'
 import { elections } from '@/model/data/elections'
 
 const election2024 = elections[0]

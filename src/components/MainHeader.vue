@@ -6,7 +6,7 @@ import ArrowBottomIcon from './icons/ArrowBottomIcon.vue'
 </script>
 
 <template>
-  <header class="flex min-h-24 py-3 border-b">
+  <header class="sticky top-0 left-0 bg-white flex min-h-24 py-3 border-b">
     <BaseWrapper>
       <div class="h-full flex justify-between gap-2">
         <div class="flex items-center pr-3 border-r border-r-black">

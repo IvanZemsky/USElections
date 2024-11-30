@@ -3,8 +3,8 @@ import { STATE_GROUPS } from '@/model/constants/constants'
 import { stateElection } from '@/model/data/stateElection'
 import type { Election } from '@/model/types/election'
 import type { State, StateGroup } from '@/model/types/state'
-import StateByGroupItem from './StateByGroupItem.vue'
-import { getColor } from "@/helpers/getColor";
+import StateByGroupItem from '@/components/diagrams/StateByGroupDiagram/StateByGroupItem.vue'
+import { getColor } from '@/helpers/getColor'
 
 const { election } = defineProps<{ election: Election }>()
 
@@ -13,7 +13,6 @@ const states = stateElection.find((result) => result.electionId === election.id)
 const filterStatesByGroup = (states: State[], group: StateGroup) => {
   return states.filter((state) => state.group === group)
 }
-
 </script>
 
 <template>
