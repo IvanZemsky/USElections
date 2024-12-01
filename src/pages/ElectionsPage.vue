@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import StateByGroupDiagram from '@/components/diagrams/StateByGroupDiagram/StateByGroupDiagram.vue'
 import VotedStateDiagram from '@/components/diagrams/VotedStateDiagram/VotedStateDiagram.vue'
-import USMap from '@/components/map/USMap.vue'
+import USMapWithTooltip from "@/components/map/USMapWithTooltip.vue";
 import { elections } from '@/model/data/elections'
+import { provide } from "vue";
 
 const election2024 = elections[0]
+
+provide('election', election2024)
 </script>
 
 <template>
-  <div class="flex flex-col items-center gap-8 pt-8">
+  <div class="flex flex-col items-center gap-8 py-8">
     <h1 class="max-w-5xl text-center font-bold text-6xl">US 2024 Presidential Election Results</h1>
 
     <div class="flex items-center gap-4">
@@ -35,7 +38,7 @@ const election2024 = elections[0]
     <VotedStateDiagram :election="election2024" />
 
     <div class="max-w-5xl w-full my-auto">
-      <USMap :election="election2024" />
+      <USMapWithTooltip :election="election2024" />
     </div>
 
     <p class="text-sm text-neutral-400">

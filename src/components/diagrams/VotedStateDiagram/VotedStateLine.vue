@@ -11,9 +11,10 @@ type Props = {
 
 const { states, color } = defineProps<Props>()
 
-const rectSize = 9
+const rectSize = 8.8
 const columnAmount = 3
-const height = rectSize * columnAmount
+const strokeWidth = 2
+const height = rectSize * columnAmount + strokeWidth * 2
 
 let ready: Ref<StateInDiagram[]> = ref([])
 
@@ -60,7 +61,7 @@ const boundingBox = computed(() => {
       :height="boundingBox.maxY - boundingBox.minY"
       rx="1"
       ry="1"
-      stroke-width="2"
+      :stroke-width="strokeWidth"
       stroke-linejoin="round"
     />
   </svg>

@@ -34,7 +34,7 @@ const getStatesByParty = (states: State[], party: string): State[] => {
         <p :class="`text-2xl font-semibold text-${side.color}`">
           {{ side.candidate }}
         </p>
-        <p class="text-neutral-400 uppercase">{{ side.popularVotes }} votes</p>
+        <p class="text-neutral-400 uppercase">{{ side.popularVotes.toLocaleString('en-US') }} votes</p>
       </div>
       <VotedStateLine :states="getStatesByParty(states, side.party)" :color="side.color" />
     </div>

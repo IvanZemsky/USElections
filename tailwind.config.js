@@ -8,5 +8,9 @@ export default {
     },
   },
   plugins: [],
-  safelist: ['fill-red-500', 'fill-blue-400', 'bg-blue-400, bg-red-500'],
+  safelist: [
+    {
+      pattern: /(bg|text|fill)-(red|blue)-(400|500)/,
+    },
+  ],
 }

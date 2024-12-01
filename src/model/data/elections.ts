@@ -4,7 +4,7 @@ export const elections: Election[] = [
   {
     id: '1',
     type: 'Presidential',
-    date: '2024-11-05',
+    date: '2024',
     desc: "Presidential elections were held in the United States on November 5, 2024. The Republican Party's ticket— Donald Trump, who was the 45th president of the United States from 2017 to 2021, and JD Vance, the junior U.S. senator from Ohio — defeated the Democratic Party's ticket — Kamala Harris, the U.S. vice president, and Tim Walz, the governor of Minnesota.",
     sides: [
       {
